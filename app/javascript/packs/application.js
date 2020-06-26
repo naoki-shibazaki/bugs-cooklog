@@ -15,3 +15,9 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+import '../src/application.scss' // application.scss読み込み
+import UIkit from 'uikit'; // UIkitのJavascriptを読み込み
+window.UIkit = UIkit; // UIkitのコマンドを全画面で使用可能する
+import Icons from 'uikit/dist/js/uikit-icons'; // UIkitのアイコンを読み込む
+UIkit.use(Icons); // アイコンを使用可能にする
