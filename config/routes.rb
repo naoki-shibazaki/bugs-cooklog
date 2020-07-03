@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :meetings
   get 'calendar/top'
+  post 'calendar/top'
   get 'calendar/back'
   resources :calendar
   root 'comments#index'
