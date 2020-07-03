@@ -1,0 +1,11 @@
+  <%= month_calendar events: @meetings do |date, meetings| %>
+    <%= date.day %> <%= link_to "   登録", new_calendar_path, class: 'register'%>
+
+    <% meetings.each do |meeting| %>
+      <div>
+        
+        <%= meeting.name %>
+        
+      </div>
+    <% end %>
+  <% end %>
